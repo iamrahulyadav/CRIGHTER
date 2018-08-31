@@ -62,7 +62,7 @@ public class RecordingAudio extends Service {
         fileName =  root.getAbsolutePath() + "/Crighter/" +
                 String.valueOf(System.currentTimeMillis() + ".mp3");
         SharedPreferences sharedPreferences = getSharedPreferences(SPref.PRE_AUDIO, 0);
-        SPref.storingAudioFilePath(sharedPreferences, file.toString());
+        SPref.storingAudioFilePath(sharedPreferences, fileName);
         startRecording(fileName);
         //final SoundRecorder soundRecorder = new SoundRecorder(getApplicationContext(), fileName.toString());
         //soundRecorder.startRecording();
